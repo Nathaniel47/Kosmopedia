@@ -7,7 +7,7 @@ File Structure:
   
 - random.html: Page for accessing random articles.
 
-- search.html: Page displaying search results (not implemented yet).
+- search buttun: Button for searching for articles.
   
 - edit.html: Page for editing existing articles.
   
