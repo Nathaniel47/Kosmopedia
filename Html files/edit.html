@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wikipedia-like Encyclopedia</title>
+    <title>Kosmopedia</title>
     <link rel="stylesheet" href="../CSS files/styles.css" />
   </head>
 
   <body>
     <header>
-      <h1>Kosmopedia</h1>
+      <div class="title">
+        <h2 class="name">KOSMOPEDIA</h2>
+        <h5 class="catchWord">The World's Encyclopedia</h5>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home </a></li>
           <li><a href="new.html">New </a></li>
-          <li><a href="random.html">Random </a></li>
+          <li><a href="random.html">Random article </a></li>
 
           <li>
             <div class="header-right">
@@ -27,5 +30,37 @@
         </ul>
       </nav>
     </header>
+
+    <p>
+      Paste your Markdown text below and click "Convert" to see the HTML output.
+    </p>
+    <form id="markdown-form">
+      <textarea
+        id="markdown-input"
+        rows="10"
+        placeholder="Enter your Markdown here..."
+      ></textarea>
+      <br />
+      <button type="button" onclick="convertMarkdown()">Convert</button>
+    </form>
+    <pre id="html-output"></pre>
+    <textarea
+      id="text-output"
+      rows="10"
+      placeholder="Generated HTML output will appear here"
+    ></textarea>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      function convertMarkdown() {
+        const markdownText = document.getElementById("markdown-input").value;
+        const htmlOutput = marked(markdownText);
+        document.getElementById("html-output").textContent = htmlOutput;
+        document.getElementById("text-output").value = htmlOutput; // Add HTML output to textbox
+      }
+    </script>
+
+    <footer>
+      <p>&copy; 2024 Kosmopedia</p>
+    </footer>
   </body>
 </html>

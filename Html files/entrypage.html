@@ -3,7 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kosmopedia</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      .title {
+        font-family: Linux Libertine, Hoefler Text, Georgia, Times New Roman,
+          Times, serif;
+      }
+
+      .search-input {
+        width: 30%; /* Set width of the search box */
+        height: 40px; /* Make the search box taller */
+        direction: flex;
+      }
+      .search-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        height: 46px;
+      }
+
+      .search-button:hover {
+        background-color: #0056b3;
+      }
+
+      img {
+        width: 20%;
+      }
+
+      header {
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+        text-align: left;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+      }
+      nav a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 10px;
+      }
+      nav a:hover {
+        color: #007bff;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: black;
+        margin-left: 15px;
+      }
+
+      nav ul li a:hover {
+        color: #0e9dc9;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 500px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Main Page</a></li>
+            <li><a href="random.html">Random article</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="title">
+        <h1>KOSMOPEDIA</h1>
+        <h4>The World's Encyclopedia</h4>
+      </div>
+      <br />
+      <img
+        src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@1.5x.png "
+        alt="Wikipedia logo]"
+      />
+      <br /><br />
+    </div>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search..." />
+      <button class="search-button">Search</button>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Kosmopedia</p>
+    </footer>
+  </body>
 </html>

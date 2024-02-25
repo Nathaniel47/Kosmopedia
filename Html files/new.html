@@ -3,28 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wikipedia-like Encyclopedia</title>
-    <link rel="stylesheet" href="../CSS files/styles.css" />
+    <title>Kosmopedia</title>
+    <link rel="stylesheet" href="../CSS files/random.css" />
   </head>
 
   <body>
     <header>
-      <h1>Kosmopedia</h1>
+      <div class="title">
+        <h2 class="name">KOSMOPEDIA</h2>
+        <h5 class="catchWord">The World's Encyclopedia</h5>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="new.html">New Page</a></li>
           <li><a href="edit.html">Edit </a></li>
-          <li><a href="random.html">Random </a></li>
+          <li><a href="random.html">Random article</a></li>
 
           <li>
-            <form id="searchForm" action="#" method="GET">
-              <input type="text" id="searchInput" placeholder="Search..." />
-              <button type="submit">Search</button>
-            </form>
+            <div class="header-right">
+              <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Search..." />
+                <button type="submit">Search</button>
+              </form>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
+
+    <main>
+      <div class="image-container">
+        <img src="../images/blue birds.jpg" alt="Image 1" />
+        <img src="../images/grinch.jpg" alt="Image 2" />
+      </div>
+      <article>
+        <h3>Topics in the news</h3>
+        <p>
+          <ul>
+            <li>Three new moons of the Solar System are discovered, one around Uranus and two around Neptune, bringing their total known satellites to 28 and 16, respectively. (PBS)</li>
+            <li>More than 71,000 customers of US mobile carrier AT&T experience network outages. Some Verizon and T-Mobile users also report outages. (CNN) (NBC News)</li>
+            <li>The Staten Island Tunnel is an abandoned, incomplete railway and subway tunnel in New York City.</li>
+          </ul>
+        </p>
+      </article>
+      <article>
+        <h3>February 25, 2024 (Sunday)</h3>
+        <p>
+          Integer maximus velit ut ultrices faucibus. Suspendisse ultrices metus
+          eget pharetra tempus. Ut et lobortis eros.
+        </p>
+      </article>
+      <article>
+        <h3>February 24, 2024 (Saturday)</h3>
+        <p>
+          Integer maximus velit ut ultrices faucibus. Suspendisse ultrices metus
+          eget pharetra tempus. Ut et lobortis eros.
+        </p>
+      </article>
+      <article>
+        <h3>February 23, 2024 (Friday)</h3>
+        <p>
+          Integer maximus velit ut ultrices faucibus. Suspendisse ultrices metus
+          eget pharetra tempus. Ut et lobortis eros.
+        </p>
+      </article>
+      <div class="image-container">
+        <img src="../images/pexels-pok-rie-2049422.jpg" alt="Image 4" />
+        <img src="../images/Aladin.jpg" alt="Image 3" />
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Kosmopedia</p>
+    </footer>
   </body>
 </html>
